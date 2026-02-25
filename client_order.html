@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place New Order</title>
+</head>
+
+<body>
+    <h1>Place a New Customized Order</h1>
+    <h3>Customize Your Meal</h3>
+    <div>
+        <div>
+                <label>Meal Weight (grams):</label>
+            <input type="number" name="meal_weight" placeholder="e.g 250" min ="100" max="1000">
+            <br><br>
+            <label>Number of Meat Pieces:</label>
+            <input type="number" name="meat_pieces" placeholder="e.g 1-10" min="1" max="10">
+            <br><br>
+            <label>Type of Meat:</label>
+                            <select name="meat_type">
+                                <option>Beef Stick</option>
+                                <option>Lamb Stick</option>
+                                <option>Chicken Stick</option>
+                                <option>Veal Stick</option>
+                            </select>
+        <label>Cooking Level:</label>
+                            <select name="cooking_level">
+                                <option>Rare</option>
+                                <option>Medium Rare</option>
+                                <option>Medium</option>
+                                <option>Well Done</option>
+                            </select>
+                <br><br>
+            </label>  
+        </div>
+         
+        <h3>Order Type & preferences:</h3>
+        <p>
+                <label>Select Order Type:</label><br>
+                <input type="radio" name="type" value="takeaway" checked> Takeaway<br>
+                <input type="radio" name="type" value="dinein"> Dine-in <br><br>
+        </p>
+        <div>
+            <p>
+                Reservation Time:
+                <input type="time" name="time">
+                <br><br>
+                Number of Seats:
+                <input type="number" name="seats" placeholder="e.g 1-10" min="1" max="10">
+                <br><br>
+                Dining Section:
+                        <select name="section">
+                            <option>Economy Section</option>
+                            <option>Luxury Section (VIP)</option>
+                        </select>
+            </p>
+        </div>
+        <a href ="client_confirmation.html"><button type="submit">Submit Order</button></a>
+        <br><br>
+        <a href="client.html">Back to Client Dashboard</a>
+    </div>
+</body>
+</html>
